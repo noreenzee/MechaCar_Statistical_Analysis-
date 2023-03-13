@@ -24,6 +24,7 @@ The MechaCar_mpg.csv dataset contains mpg test results for 50 prototype MechaCar
 Results for following requirements are below
 Create a new RScript by going to the File menu. Select "New File," followed by "RScript," or you can click the icon in the top-left corner of the RStudio window. Note that the icon looks like a white square with a plus sign in the top left corner.
 
+
 Use the library() function to load the dplyr package.
 
 Import and read in the MechaCar_mpg.csv file as a dataframe.
