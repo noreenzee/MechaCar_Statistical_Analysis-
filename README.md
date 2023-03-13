@@ -71,3 +71,60 @@ Write an RScript that creates a lot_summary dataframe using the group_by() and t
 ![image](https://user-images.githubusercontent.com/112978144/224804253-5719267e-8ac9-458f-a584-36b0ddd76e02.png)
 
 
+#- Part 3: T-Tests on Suspension Coils
+Using your knowledge of R, perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
+
+Follow the instructions below to complete Part 3.
+
+Technical Analysis
+In your MechaCarChallenge.RScript, write an RScript using the t.test() function to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
+
+
+
+Next, write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
+
+# Results
+
+*- write an RScript using the t.test() function to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
+
+![image](https://user-images.githubusercontent.com/112978144/224848179-7923d21d-ad7b-4e20-a6e2-ee0bb4712acc.png)
+
+*- write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
+![image](https://user-images.githubusercontent.com/112978144/224848514-1646ce9e-f39e-4db8-a93e-2c2f6be49d8d.png)
+
+*-From above screenshots we can see that the true mean of the sample is 1498.78, which is same as in the summary statistics above. With a p-Value of 0.06, which is higher than the common significance level of 0.05, there is NOT enough evidence to support rejecting the null hypothesis. we can say that the mean of all three of these manufacturing lots is statistically similar to the presumed population mean of 1500.
+
+Next looking at each individual lots:
+
+*- Lot 1 sample actually has the true sample mean of 1500. With a p-Value of 1, we cannot reject the null hypothesis that there is no statistical difference between the observed sample mean and the presumed population mean (1500).
+Lot 2 has the same outcome with a sample mean of 1500.02, a p-Value of 0.61; the null hypothesis cannot be rejected, and the sample mean and the population mean of 1500 are statistically similar.
+However, Lot 3,  is a different scenario. Here the sample mean is 1496.14 and the p-Value is 0.04, which is lower than the common significance level of 0.05. All staitical measures are indicating to reject the null hypothesis that this sample mean and the presumed population mean are not statistically different.
+
+# Deliverable 4
+## Study Design: MechaCar vs Competition
+In your description, address the following questions:
+Q-What metric or metrics are you going to test?
+Collecting data for comparable models for the following metrics:
+
+*_Safety Feature Rating: Independent Variable
+*_Current Price vs purchased price (Selling): Dependent Variable
+*_Engine (Electric, Hybrid, Gasoline etc): Independent Variable
+*_Average Annual Cost of Maintenance: Independent Variable
+*_MPG: Independent Variable
+
+
+Q-What is the null hypothesis or alternative hypothesis?
+
+
+*-Null Hypothesis
+MechaCar is priced correctly based on its performance of key factors.
+*-Alternative Hypothesis
+MechaCar is NOT priced correctly based on performance of key factors.
+Q-What statistical test would you use to test the hypothesis? And why?
+A multiple linear regression is best option to be used to determine the factors that have the highest correlation with the list of the selling price.
+Q-What data is needed to run the statistical test?
+MechaCar Analysis- RUs
+
+
+
+
